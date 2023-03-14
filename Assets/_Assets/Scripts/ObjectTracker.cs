@@ -4,21 +4,19 @@ using UnityEngine;
 
 public class ObjectTracker : MonoBehaviour
 {
+    public float totalDestructionTime = 2f;
+
     public List<GameObject> trackedObjects = new List<GameObject>();
     public static ObjectTracker Instance;
 
     public void DestroyNow()
     {
-        foreach (GameObject go in trackedObjects)
-        {
-            Destroy(go);
-        }
-        trackedObjects.Clear();
+        StartCoroutine(DestroyOverTime());
     }
 
     public void AddToTracked(GameObject objectToAdd)
     {
-    trackedObjects.Add(objectToAdd);
+        trackedObjects.Add(objectToAdd);
     }
 
     private void Awake()
@@ -32,15 +30,15 @@ public class ObjectTracker : MonoBehaviour
             Destroy(this);
         }
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator DestroyOverTime()
     {
-        
+        float timeBetween = totalDestructionTime / trackedObjects.Count;
+        foreach (GameObject go in trackedObjects)
+        {
+            Destroy(go);
+            yield return new WaitForSeconds(timeBetween);
+        }
+        trackedObjects.Clear();
     }
 }

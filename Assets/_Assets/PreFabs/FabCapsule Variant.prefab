@@ -103,6 +103,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9058806606674284328, guid: 0d7ddb467a0954adbbd87403f5d4ffb6, type: 3}
+      propertyPath: destroyEffect
+      value: 
+      objectReference: {fileID: 5385701847850163569, guid: 461972816acf04cdeb86855d48feaa19, type: 3}
     - target: {fileID: 5142111063778084093, guid: 0d7ddb467a0954adbbd87403f5d4ffb6, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -153,7 +157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6944928200965337890, guid: 0d7ddb467a0954adbbd87403f5d4ffb6, type: 3}
       propertyPath: m_Name
-      value: FabCapsule
+      value: FabCapsule Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6944928200965337890, guid: 0d7ddb467a0954adbbd87403f5d4ffb6, type: 3}
       propertyPath: m_IsActive

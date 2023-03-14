@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 5352448453168151105}
   - component: {fileID: 5264863820438980991}
   - component: {fileID: 4436919625793570361}
+  - component: {fileID: -9058806606674284328}
   m_Layer: 0
   m_Name: FabCube
   m_TagString: Untagged
@@ -269,3 +270,16 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &-9058806606674284328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6944928200965337890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52a2f64b3a63a479094a4ad2408059a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyEffect: {fileID: 5385701847850163569, guid: 461972816acf04cdeb86855d48feaa19, type: 3}

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TrackedObject : MonoBehaviour
 {
+    public GameObject destroyEffect;
+
+ 
     //public ObjectTracker tracker;
     // Start is called before the first frame update
     void Start()
@@ -15,5 +18,17 @@ public class TrackedObject : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnDestroy()
+    {
+        if (gameObject.scene.isLoaded);
+        {
+            
+        }
+
+        {
+            Instantiate(destroyEffect, transform.position, transform.rotation);
+        }   
     }
 }
