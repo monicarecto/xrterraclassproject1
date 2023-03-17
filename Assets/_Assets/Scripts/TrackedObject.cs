@@ -22,12 +22,9 @@ public class TrackedObject : MonoBehaviour
 
     void OnDestroy()
     {
-        if (gameObject.scene.isLoaded);
+        if (gameObject.scene.isLoaded)
         {
             
-        }
-
-        {
             Instantiate(destroyEffect, transform.position, transform.rotation);
         }   
     }
